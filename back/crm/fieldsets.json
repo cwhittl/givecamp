@@ -98,10 +98,10 @@
             }
           ]
         }, {
-          "label": "Accounting",
+          "label": "Nonprofit",
           "fields": [
             {
-              "name": "invoices",
+              "name": "organizations",
               "widget": "tomany-table",
               "readonly": true,
               "fields": [

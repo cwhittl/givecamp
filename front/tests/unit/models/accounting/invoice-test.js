@@ -1,8 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('accounting/invoice', 'Unit | Model | accounting/invoice', {
+moduleForModel('nonprofit/invoice', 'Unit | Model | nonprofit/invoice', {
   // Specify the other units that are required for this test.
-  needs: ['model:accounting/invoiceline', 'model:crm/company', ]
+  needs: ['model:nonprofit/invoiceline', 'model:crm/company', ]
 });
 
 test('it exists', function(assert) {
