@@ -8,7 +8,7 @@ from django.conf import settings
 #os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
-app = Celery('djember_sample')
+app = Celery('givecamp')
 
 # Using a string here means the worker will not have to
 # pickle the object when using Windows.

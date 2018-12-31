@@ -1,5 +1,5 @@
 """
-WSGI config for Djember Sample project.
+WSGI config for Givecamp NWA project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

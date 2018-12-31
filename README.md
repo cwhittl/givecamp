@@ -1,4 +1,4 @@
-# LevIT's Djember Sample
+# LevIT's Givecamp NWA
 
 This application is a sample application for 4 projects:
 

@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'djember-sample',
+    modulePrefix: 'givecamp',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

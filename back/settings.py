@@ -1,5 +1,5 @@
 """
-Django settings for djember_sample project.
+Django settings for givecamp project.
 
 https://docs.djangoproject.com/en/1.9/topics/settings/
 
@@ -26,7 +26,7 @@ except ImportError:
 # Application definition
 
 INSTALLED_APPS = (
-    'djember_sample',
+    'givecamp',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -89,7 +89,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djember_sample.wsgi.application'
+WSGI_APPLICATION = 'givecamp.wsgi.application'
 
 
 # Password validation
@@ -152,8 +152,8 @@ REST_FRAMEWORK = {
 }
 DRF_AUTO_METADATA_ADAPTER = 'drf_auto_endpoint.adapters.EmberAdapter'
 DRF_AUTO_BASE_SERIALIZER = 'drf_base64.serializers.ModelSerializer'
-DRF_AUTO_BASE_VIEWSET = 'djember_sample.views.ModelViewSet'
-DRF_AUTO_BASE_READONLY_VIEWSET = 'djember_sample.views.ReadOnlyModelViewSet'
+DRF_AUTO_BASE_VIEWSET = 'givecamp.views.ModelViewSet'
+DRF_AUTO_BASE_READONLY_VIEWSET = 'givecamp.views.ReadOnlyModelViewSet'
 
 BROKER_URL = 'django://'
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
@@ -164,8 +164,8 @@ DRF_AUTO_WIDGET_MAPPING = {
 }
 
 EXPORTER_ADAPTER = 'export_app.adapters.EmberAdapter'
-EXPORTER_ROUTER_PATH = 'djember_sample.api_urls.router'
-EXPORTER_FRONT_APPLICATION_NAME = 'djember-sample'
+EXPORTER_ROUTER_PATH = 'givecamp.api_urls.router'
+EXPORTER_FRONT_APPLICATION_NAME = 'givecamp'
 
 if DEBUG:
     INSTALLED_APPS += (
@@ -180,5 +180,5 @@ CORS_ORIGIN_ALLOW_ALL = DEBUG
 
 # Apps Jenkins needs to run tests on
 PROJECT_APPS = [
-    'djember_sample',
+    'givecamp',
 ]

@@ -6,8 +6,8 @@ from rest_framework import urls as drf_urls
 
 from levit_report import urls as report_urls
 
-from djember_sample import api_urls
-from djember_sample.views import (EmberView, MeView, LoginView, LogoutView,
+from givecamp import api_urls
+from givecamp.views import (EmberView, MeView, LoginView, LogoutView,
                                                 service_worker_view, root_files_view)
 
 from export_app import urls as export_app_urls, settings as export_app_settings
