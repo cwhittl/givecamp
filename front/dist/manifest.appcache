@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# created 2018-12-31T13:49:24.491Z
+# created 2018-12-31T14:51:53.120Z
 
 CACHE:
 assets/fonts/bootstrap/glyphicons-halflings-regular.eot
@@ -14,7 +14,7 @@ assets/fonts/fontawesome/fontawesome-webfont.woff
 assets/fonts/fontawesome/fontawesome-webfont.woff2
 assets/fonts/fontawesome/FontAwesome.otf
 assets/givecamp-5da803d9282559278ce54df1bae274de.css
-assets/givecamp-7d02ba622a155e1b5544a3386f385375.js
+assets/givecamp-bef5eb077e749df0df643b8a47f71387.js
 assets/images/flags16-3af314e44a47b60ee26701744a39e9c4.png
 assets/images/flags32-c7ab5313f94681ce98f8d41e1235d6b6.png
 assets/vendor-e558cd6c385d8e11384d6cadf5052679.css
@@ -23,7 +23,7 @@ crossdomain.xml
 ember-world-flags/images/flags16-0b8915998d4be63d4e9c88d3d917300f.png
 ember-world-flags/images/flags32-d2965bbc5cb069a7380627c4062d4eb7.png
 robots.txt
-service-worker-16d8dedb468cb463c8e27331907d640c.js
+service-worker-cf6348bcea151ff3e851a4af25127d72.js
 sw-toolbox-58fbe897138010d232186fa925ff30b7.js
 /
 
