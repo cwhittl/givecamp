@@ -37,20 +37,4 @@ export default Ember.Service.extend({
     }, 0);
   }),
 
-  init() {
-    const modelLoader = this.get('modelLoader');
-    modelLoader.ensure_model('products', 'product').then(() => {
-      this.get('store').findAll('basketitem').then((items) => {
-        items.map((item) => {
-          item.get('product');
-          // .catch((err) => {
-          //   console.warn(err, 'destroying', item);
-          //   item.destroyRecord();
-          // });
-        });
-        this.set('items', items);
-        this.set_updated();
-      });
-    });
-  }
 });
