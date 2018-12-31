@@ -31,12 +31,5 @@ class Organization(models.Model):
             return '-'
         return ''
 
-    @property
-    def total(self):
-        rv = 0
-        for line in self.lines.all():
-            rv += line.total
-        return rv
-
     def __str__(self):
         return 'Organization #{} - {} ({}{})'.format(self.id, self.related_party, self.sign, self.total)

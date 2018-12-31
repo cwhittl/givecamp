@@ -1,9 +1,9 @@
 /* global require, module */
 
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  const app = new EmberApp(defaults, {
     'ember-prism': {
       'theme': 'okaidia',
       'components': ['python', 'javascript', 'markup'],
@@ -13,7 +13,7 @@ module.exports = function(defaults) {
       optional: ['es7.decorators']
     }
   });
-  
+
   app.import('vendor/bootstrap/bootstrap.js');
 
   // Use `app.import` to add additional libraries to the generated
@@ -30,4 +30,4 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   return app.toTree();
-}
+};

@@ -23,9 +23,9 @@ export default SessionService.extend({
       } else {
         const params = {
           headers: {
-            "X-CSRFToken": Cookies.get('csrftoken'),
-            "Content-Type": 'application/json',
-            "Accept": 'application/json',
+            'X-CSRFToken': Cookies.get('csrftoken'),
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
           }
         };
         fetch(url, params).then((response) => {
@@ -35,7 +35,6 @@ export default SessionService.extend({
         }).then((json) => {
           this.set('currentUser', json);
         }, () => {
-          console.log('failed parsing reponse for current user');
           this.set('isAuthenticated', false);
         });
       }

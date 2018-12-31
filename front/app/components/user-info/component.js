@@ -5,13 +5,13 @@ export default Ember.Component.extend({
   right: false,
   login: null,
   password: null,
-  
+
   authenticateAction: 'authenticate',
   invalidateAction: 'invalidate',
-  
+
   actions: {
     authenticate() {
-      var credentials = {
+      const credentials = {
         identification: this.get('login'),
         password: this.get('password')
       };

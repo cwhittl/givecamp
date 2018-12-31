@@ -10,9 +10,5 @@ export default [
     title: 'Ember admin',
     route: 'dashboard',
     emoji: '🐾'
-  }, {
-    title: 'Sample webshop',
-    route: 'shop',
-    emoji: '🏪'
   }
 ];

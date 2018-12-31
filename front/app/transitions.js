@@ -3,4 +3,4 @@ export default function() {
     this.use('fade', { duration: 150  }),
     this.debug()
   );
-}   
+}

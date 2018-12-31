@@ -9,26 +9,6 @@
         {"name": "related_party"},
         {"name": "state"}
       ]
-    }, {
-      "name": "lines",
-      "widget": "tomany-table",
-      "fields": [
-        {"name": "product"},
-        {"name": "quantity"},
-        {
-          "name": "total",
-          "readonly": true,
-          "label": "Total"
-        }
-      ],
-      "extra": {
-        "sortableBy": "position"
-      }
-    }, {
-      "name": "total",
-      "readonly": true,
-      "label": "Total",
-      "class": "col-md-6 col-lg-4 col-md-push-6 col-lg-push-8"
     }
   ]
 }

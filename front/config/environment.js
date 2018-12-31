@@ -1,7 +1,7 @@
-/* jshint node: true */
+/* global module */
 
 module.exports = function(environment) {
-  var ENV = {
+  const ENV = {
     modulePrefix: 'givecamp',
     environment: environment,
     baseURL: '/',
@@ -20,7 +20,7 @@ module.exports = function(environment) {
       // when it is created
     },
   };
-  
+
   ENV['ember-simple-auth'] = {
     authorizer: 'authorizer:django',
     authenticationRoute: 'login',
@@ -66,7 +66,7 @@ module.exports = function(environment) {
     };
     ENV.manifest = {
       enabled: true,
-      appcacheFile: "/manifest.appcache",
+      appcacheFile: '/manifest.appcache',
       excludePaths: ['index.html'],
       includePaths: ['/'],
       network: ['*'],

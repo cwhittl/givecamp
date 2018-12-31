@@ -6,16 +6,15 @@ import Cookies from 'ember-cli-js-cookie';
 
 
 function isSecureUrl(url) {
-  var link  = document.createElement('a');
+  const link  = document.createElement('a');
   link.href = url;
-  link.href = link.href;
   return link.protocol === 'https:';
 }
 
 export default Base.extend({
 
   init() {
-    var globalConfig = config['ember-simple-auth'] || {};
+    const globalConfig = config['ember-simple-auth'] || {};
     this.serverAuthEndpoint = globalConfig.serverAuthEndpoint || '/rest-auth';
   },
 
@@ -73,9 +72,9 @@ export default Base.extend({
     const params = {
       method: method,
       headers: {
-        "X-CSRFToken": Cookies.get('csrftoken'),
-        "Content-Type": 'application/json',
-        "Accept": 'application/json',
+        'X-CSRFToken': Cookies.get('csrftoken'),
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
       }
     };
     if (method === 'POST') {

@@ -14,7 +14,7 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
         session.authenticate(this.get('authenticator'), credentials).then(() => {
           session.set('loginError', false);
         }, () => {
-          session.set('loginError', "Invalid credentials. Please retry.");
+          session.set('loginError', 'Invalid credentials. Please retry.');
         });
       }
     },
