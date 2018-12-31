@@ -1,35 +1,29 @@
 from functools import reduce
 
 from django.db import models
+from phone_field import PhoneField
 
-from crm.models import Company
-from products.models import Product
+from versions.models import Versionable
+from versions.fields import VersionedForeignKey
 
-
-INVOICE_TYPES = (
-    ('ci', 'Client'),
-    ('si', 'Supplier'),
-)
-
-INVOICE_STATES = (
-    ('draft', 'Draft'),
-    ('open', 'Open'),
-    ('paid', 'Paid'),
-)
-
-
-class Organization(models.Model):
+class Organization(Versionable):
 
     date = models.DateField(auto_now_add=True)
-    invoice_type = models.CharField(max_length=2, choices=INVOICE_TYPES)
-    related_party = models.ForeignKey(Company, related_name='organizations', on_delete=models.CASCADE)
-    state = models.CharField(max_length=5, choices=INVOICE_STATES)
-
-    @property
-    def sign(self):
-        if self.invoice_type == 'si':
-            return '-'
-        return ''
+    name = models.CharField(max_length=255)
 
     def __str__(self):
-        return 'Organization #{} - {} ({}{})'.format(self.id, self.related_party, self.sign, self.total)
+        return 'Organization #{} - {}'.format(self.id, self.name)
+
+class Representative(Versionable):
+
+    date = models.DateField(auto_now_add=True)
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    phone_number = PhoneField(blank=False)
+    other_phone_number = PhoneField(blank=False)
+
+    organization = VersionedForeignKey(
+        Organization, related_name='organizations', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return 'Representative #{} - {} {}'.format(self.id, self.name, self.organization)

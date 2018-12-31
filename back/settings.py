@@ -45,6 +45,8 @@ INSTALLED_APPS = (
     'export_app',
     'levit_report',
 
+    'versions',
+
     # Celery
     #'kombu.transport.django.KombuAppConfig',
 
