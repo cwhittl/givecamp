@@ -8,14 +8,14 @@ const Router = Ember.Router.extend({
 
 export default Router.map(function() {
   sections.forEach((section) => {
-    if (section.route !== 'djember' && section.route !== 'shop') {
+    if (section.route !== 'dashboard' && section.route !== 'shop') {
       const opts = section.opts || {};
       this.route(section.route, opts);
     }
   });
   this.route('login');
   this.route('logout');
-  this.route('djember', function() {
+  this.route('dashboard', function() {
     this.route('app', {path: '/:app_name'});
     this.route('list', {path: '/:app_name/:model_name'});
     this.route('form', {path: '/:app_name/:model_name/:id'});

@@ -8,7 +8,7 @@ export default [
     emoji: '🏡'
   }, {
     title: 'Ember admin',
-    route: 'djember',
+    route: 'dashboard',
     emoji: '🐾'
   }, {
     title: 'Sample webshop',

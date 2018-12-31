@@ -7,7 +7,7 @@ This application is a sample application for 4 projects:
 - [DRF-schema-adapter](http://drf-schema-adapter.readthedocs.io/en/latest/)
 - [DRF-Base64](https://bitbucket.org/levit_scs/drf_base64)
 
-Please see [the demo](http://djembersample.pythonanywhere.com/) for more information.
+Please see [the demo](http://dashboardsample.pythonanywhere.com/) for more information.
 
 License information available [here](LICENSE.md).
 

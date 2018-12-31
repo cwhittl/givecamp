@@ -24,7 +24,7 @@ module.exports = function(environment) {
   ENV['ember-simple-auth'] = {
     authorizer: 'authorizer:django',
     authenticationRoute: 'login',
-    routeAfterAuthentication: 'djember',
+    routeAfterAuthentication: 'dashboard',
     serverAuthEndpoint: '/api/auth'
   };
 
