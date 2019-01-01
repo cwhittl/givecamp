@@ -10,6 +10,8 @@ class Organization(Versionable):
 
     date = models.DateField(auto_now_add=True)
     name = models.CharField(max_length=255)
+    description = models.CharField(max_length=1000)
+    url = models.URLField(max_length=255)
 
     def __str__(self):
         return 'Organization #{} - {}'.format(self.id, self.name)

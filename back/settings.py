@@ -51,7 +51,6 @@ INSTALLED_APPS = (
     #'kombu.transport.django.KombuAppConfig',
 
     # My applications
-    'crm',
     'nonprofit',
 
     # Tests
