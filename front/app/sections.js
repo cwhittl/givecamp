@@ -7,7 +7,7 @@ export default [
     },
     emoji: '🏡'
   }, {
-    title: 'Ember admin',
+    title: 'Dashboard',
     route: 'dashboard',
     emoji: '🐾'
   }

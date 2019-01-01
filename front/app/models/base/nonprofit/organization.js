@@ -11,23 +11,33 @@
 import attr from 'ember-data/attr';
 
 
-import { belongsTo } from 'ember-data/relationships';
+import { hasMany } from 'ember-data/relationships';
 
 
 export default Model.extend({
   
+    identity: attr('nullable'),
+  
+    version_start_date: attr('nullable'),
+  
+    version_end_date: attr('nullable'),
+  
+    version_birth_date: attr('nullable'),
+  
     date: attr('nullable'),
   
-    invoice_type: attr('string'),
+    name: attr('string'),
   
-    state: attr('string'),
+    description: attr('string'),
+  
+    url: attr('string'),
   
     __str__: attr('string'),
   
   
-    related_party: belongsTo('crm/company', {
+    organizations: hasMany('nonprofit/representative', {
       async: true,
-      inverse: 'organizations',
+      inverse: 'organization',
     }),
   
 });

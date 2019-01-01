@@ -1,8 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('nonprofit/organization', 'Unit | Model | nonprofit/organization', {
+moduleForModel('nonprofit/representative', 'Unit | Model | nonprofit/representative', {
   // Specify the other units that are required for this test.
-  needs: ['model:nonprofit/representative', ]
+  needs: []
 });
 
 test('it exists', function(assert) {
