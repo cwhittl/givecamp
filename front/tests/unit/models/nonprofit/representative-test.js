@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('nonprofit/representative', 'Unit | Model | nonprofit/representative', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:nonprofit/application', ]
 });
 
 test('it exists', function(assert) {

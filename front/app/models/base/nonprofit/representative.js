@@ -11,8 +11,18 @@
 import attr from 'ember-data/attr';
 
 
+import { belongsTo } from 'ember-data/relationships';
+
 
 export default Model.extend({
+  
+    identity: attr('nullable'),
+  
+    version_start_date: attr('nullable'),
+  
+    version_end_date: attr('nullable'),
+  
+    version_birth_date: attr('nullable'),
   
     date: attr('nullable'),
   
@@ -24,7 +34,18 @@ export default Model.extend({
   
     other_phone_number: attr('string'),
   
+    role: attr('string'),
+  
+    attending_event: attr('boolean'),
+  
+    shirt_size: attr('string'),
+  
     __str__: attr('string'),
   
+  
+    application: belongsTo('nonprofit/application', {
+      async: true,
+      inverse: 'representatives',
+    }),
   
 });

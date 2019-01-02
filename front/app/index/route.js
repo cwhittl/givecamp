@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       only: ['fields']
     },
     list: {
-      url: '/api/v1/nonprofit/organizations/',
+      url: '/api/v1/nonprofit/applications/',
       only: ['list_display', 'filter_fields', 'ordering_fields', 'list_editable', 'sortable_by',
         'search_enabled']
     },
@@ -20,7 +20,7 @@ export default Ember.Route.extend({
       only: ['fieldsets']
     },
     actions: {
-      url: '/api/v1/nonprofit/organizations/',
+      url: '/api/v1/nonprofit/applications/',
       only: ['custom_actions', 'bulk_actions']
     }
   },
@@ -114,7 +114,7 @@ export default Ember.Route.extend({
                 only.forEach((key) => {
                   rv[key] = json[key];
                 });
-                console.log(kk, rv);
+                console.log(kk, rv); // eslint-disable-line
                 this.set(`value.jsons.${kk}`, rv);
               } else {
                 this.set(`value.jsons.${kk}`, json);
