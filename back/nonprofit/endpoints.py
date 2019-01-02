@@ -10,22 +10,21 @@ from drf_auto_endpoint.endpoints import Endpoint
 from drf_auto_endpoint.decorators import custom_action
 from drf_auto_endpoint.router import router, register
 
-from .models import Organization, Representative
+from .models import Application, Representative
 
 
-# router.register(Organization)
+# router.register(Application)
 
 @register
-class OrganizationEndpoint(Endpoint):
-  model = Organization
+class ApplicationEndpoint(Endpoint):
+  model = Application
   # list_display = ['name', ]
   # list_editable = ['name', ]
   # search_fields = ['name', ]
   # filter_fields = ['name', ]
   # ordering_fields = ['name', ]
 
-
-# router.register(Representative)
+router.register(Representative)
 # @register
 # class OrganizationEndpoint(Endpoint):
 #     model = Organization

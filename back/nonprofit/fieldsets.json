@@ -1,13 +1,64 @@
 {
- "Organization": [
+ "Application": [
     {
       "widget": "fieldset",
       "innerClass": "col-lg-3 col-md-6 col-xs-12",
       "fields": [
-        {"name": "name"},
-        {"name": "description", 
+        {
+          "name": "name",
+          "label": "Organization Name"
+        },
+        {
+          "name": "mission", 
+          "label": "Mission",
+          "widget": "textarea",
           "extra": {
-            "readonly": true
+            "rows": 6
+          }
+        },
+        {
+          "name": "products_and_services",
+          "label": "Products and Services",
+          "widget": "textarea",
+          "extra": {
+            "rows": 12
+          }
+        },
+        {
+          "name": "url",
+          "label": "Website URL"
+        },
+        {
+          "name": "ask",
+          "label": "In your own words what would you like to accomplish during the GiveCamp?",
+          "widget": "textarea",
+          "extra": {
+            "rows": 24
+          }
+        },
+        {
+          "widget": "fieldset",
+          "innerClass": "col-sm-6",
+          "fields": [
+            {
+              "name": "needs_hosting",
+              "label": "I will need hosting"
+            },
+            {
+              "name": "needs_new_domain",
+              "label": "I will need a domain"
+            }
+          ]
+        },
+        {
+          "name": "applicant",
+          "label": "Applicant",
+          "readonly": true,
+          "extra": {
+            "property_path": "+",
+            "label": "name",
+            "expand": false,
+            "autoComplete": false
           }
         }
       ]
